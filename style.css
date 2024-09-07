@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: rgb(15, 17, 17);
+    width: 50%;
+    height: 500px;
+    margin: auto;
+}
+
+/* General Styles */
+.intro, .intro1, .para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.intro {
+    margin-left: 20px;
+    color: #ff0000;
+}
+
+.intro1 {
+    margin-left: 20px;
+    margin-top: 70px;
+    color: #a01010;
+    text-align: center;
+}
+
+.para {
+    font-weight: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #f3e3f3;
+    text-align: justify;
+}
+
+.clr-btn {
+    border: 2px solid #ff00ff;
+    background-color: #b10b0b;
+    color: #cc92cc;
+    margin-left: 20px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.clr-btn:hover {
+    border: 2px solid #ff00ff;
+    background-color: #cc92cc;
+    color: #1e4620;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Responsive for screen width of 700px or less */
+@media screen and (max-width: 700px) {
+    .main {
+        width: 80%;
+        height: auto; /* Make height flexible */
+    }
+
+    .intro, .intro1, .para {
+        font-size: 20px; /* Decrease font size */
+    }
+
+    .clr-btn {
+        padding: 8px 15px; /* Adjust padding */
+    }
+}
+
+/* Responsive Design for screen width of 400px or less */
+@media screen and (max-width: 400px) {
+    .main {
+        width: 90%;
+        height: auto; /* Make height flexible */
+    }
+
+    .intro, .intro1, .para {
+        font-size: 18px; /* Further decrease font size */
+    }
+
+    .clr-btn {
+        padding: 6px 10px; /* Adjust padding */
+        font-size: 16px; /* Decrease button font size */
+    }
+}
